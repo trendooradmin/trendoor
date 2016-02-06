@@ -19,7 +19,7 @@ public class LiveTrendController {
 
 	@RequestMapping(value = "{latLong}", method = RequestMethod.GET)
 	public @ResponseBody
-	TrendingTerms getTrend(@PathVariable("latLong") String latLong){
+	TrendingTerms getTrend(@PathVariable("latLong") String latLong){ 
 		
 		Location location = new Location();
 		TrendingTerms trendingTerms= new TrendingTerms();
